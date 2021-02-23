@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<meta http-equiv=" content-type"charset="UTF-8">		
+</head>
+<body>
+<p th:text="${number}"></p>
+	<form action="/test1" method="POST">
+	<label>階乗したい値を入れてください</label>
+	<input type="text" name="numberVal" th:value="${number}">
+	<input type="submit", value="送信">
+	</form>
+</body>
+</html>
